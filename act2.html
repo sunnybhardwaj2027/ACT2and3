@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act 2</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "aboutCss space boxModel"
+            "Responsive space boxModel"
+            "footer footer footer";
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: green;
+            text-align: center;
+        }
+
+        .aboutCss {
+            grid-area: aboutCss;
+            background-color: rgb(232, 229, 229);
+            border: 2px solid white;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            
+        }
+        .Responsive{
+            grid-area: Responsive;
+            background-color: rgb(232, 229, 229);
+            border: 1px solid white;
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .boxModel{
+            grid-area: boxModel;
+            background-color: rgb(232, 229, 229);
+            border: 1px solid white;
+            margin-top: 10px;
+            padding: 20px;
+            height: 175px;
+            margin-bottom: 20px;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: black;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+        .space {
+            grid-area: space;
+            background-color: white;
+        }
+        h4{
+            display: inline;
+        }
+        a{
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h1>Welcome to Your Website Task</h1>
+            <nav>
+                <h4>Home</h4>
+                <h4>About</h4>
+                <h4>Contact</h4>
+            </nav>
+        </div>
+        <div class="aboutCss">
+            <h3>About CSS</h3>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit possimus, aspernatur hic reiciendis provident, omnis magnam libero nam distinctio eius amet dignissimos, fugiat illo odit aliquid? Eum veritatis dolorum laudantium?</P>
+        </div>
+        <div class="Responsive">
+            <h3>Responsive Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestias aperiam officiis iste corporis facere voluptas distinctio repudiandae iure aliquam nam vitae. Incidunt delectus eaque illo excepturi, quisquam recusandae sapiente!</p>
+        </div>
+        <div class="boxModel">
+            <h3>Box Model</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor eligendi minus perferendis minima. Consectetur doloremque ad, veniam porro non quasi deleniti quis excepturi aut blanditiis tempore optio magni tenetur?</p>
+        </div>
+        <div class="footer"><p>Created by [sunny kumar]. follow me on <a href="">Instagram</a> | <a href="">Twitter</a></p> | <a href="">Linkedln</a></div>
+        <div class="space"></div>
+    </div>
+</body>
+</html>
